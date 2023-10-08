@@ -50,7 +50,7 @@ public class Tesis extends Escrito {
 	
 	@Override
 	public int palabrasTotales(int parametro) {
-		return getPaginas() * parametro *5;
+		return super.getPaginas() * parametro *5;
 	}
 	@Override
 	public String interpretacion() {

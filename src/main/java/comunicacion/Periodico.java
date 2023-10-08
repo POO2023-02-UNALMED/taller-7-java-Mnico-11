@@ -32,7 +32,7 @@ public class Periodico extends Escrito {
 	}
 	@Override
 	public int palabrasTotales(int parametro) {
-		return getPaginas() * parametro *10;
+		return super.getPaginas() * parametro *10;
 	}
 	@Override
 	public String interpretacion() {

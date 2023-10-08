@@ -41,7 +41,7 @@ public class Libro extends Escrito {
 	}
 	@Override
 	public int palabrasTotales(int parametro) {
-		return getPaginas() * parametro * 2;
+		return super.getPaginas() * parametro * 2;
 	}
 	@Override
 	public String interpretacion() {

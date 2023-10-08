@@ -32,16 +32,12 @@ public abstract class Alfabeto extends Pictograma {
 		return interpretacion;
 	}
 	public String toString() {
-		String parrafo = "";
-		for (String letra: letras) {
-			if (parrafo.equals("")){
-				parrafo = parrafo + letra;
-			}
-			else {
-				parrafo = parrafo + ", " + letra;
-			}
-		}
-		return parrafo;
+		String descripcion = "";
+        for (int i=0;i<(this.letras.length)-1;i++) {
+            descripcion += letras[i] + ", ";
+        }
+        descripcion+=letras[(this.letras.length)-1];
+        return descripcion;
 	}
 
 }
