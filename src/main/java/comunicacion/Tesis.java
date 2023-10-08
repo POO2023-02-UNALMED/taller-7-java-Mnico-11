@@ -48,22 +48,17 @@ public class Tesis extends Escrito {
 		this.interpretacion = interpretacion;
 	}
 	
+	@Override
 	public int palabrasTotales(int parametro) {
 		return getPaginas() * parametro *5;
 	}
+	@Override
 	public String interpretacion() {
 		return interpretacion;
 	}
+	@Override
 	public String toString() {
-		String N = this.getOrigen() + "\n";
-		N += this.getTitulo() + "\n";
-		N += this.getAutor() + "\n";
-		N += this.getPaginas() + "\n";
-		N += this.idea + "\n";
-		N += this.referencias + "\n";
-		N += this.conclusion + "\n";
-		N += this.argumentos.length + "\n";
-		return N;
+		return super.getOrigen()+"\n"+super.getTitulo()+"\n"+super.getAutor()+"\n"+super.getPaginas()+"\n"+this.idea+"\n"+this.argumentos.length+"\n"+this.conclusion+"\n"+this.referencias; 
 	}
 	
 	

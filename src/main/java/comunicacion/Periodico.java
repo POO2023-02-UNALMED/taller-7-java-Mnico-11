@@ -30,21 +30,17 @@ public class Periodico extends Escrito {
 	public void setInterpretacion(String interpretacion) {
 		this.interpretacion = interpretacion;
 	}
-	
+	@Override
 	public int palabrasTotales(int parametro) {
 		return getPaginas() * parametro *10;
 	}
+	@Override
 	public String interpretacion() {
 		return interpretacion;
 	}
+	@Override
 	public String toString() {
-		String N = this.getOrigen() + "\n";
-		N += this.getTitulo() + "\n";
-		N += this.getAutor() + "\n";
-		N += this.getPaginas() + "\n";
-		N += this.fecha + "\n";
-		N += this.primicia;
-		return N;
+		return super.getOrigen()+"\n"+super.getTitulo()+"\n"+super.getAutor()+"\n"+super.getPaginas()+"\n"+this.fecha+"\n"+this.primicia;
 	}
 
 }
