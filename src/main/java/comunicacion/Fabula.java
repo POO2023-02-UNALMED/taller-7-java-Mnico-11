@@ -2,7 +2,7 @@ package comunicacion;
 
 public class Fabula extends Escrito{
     private String ensenanza;
-    public String interpretacion;
+    private String interpretacion;
 
     public Fabula(String origen,String titulo,String autor,int paginas,String ensenanza,String interpretacion){
         super(origen, titulo, autor, paginas);
