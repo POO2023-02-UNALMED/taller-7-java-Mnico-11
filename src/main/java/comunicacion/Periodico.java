@@ -47,7 +47,9 @@ public class Periodico extends Escrito{
     }
 	@Override
 	public String toString() {
-		return super.getOrigen()+"\n"+super.getTitulo()+"\n"+super.getAutor()+"\n"+super.getPaginas()+"\n"+this.fecha+"\n"+this.primicia;
+		String descripcion =
+                super.getOrigen() + "\n" +super.getTitulo() + "\n" +super.getAutor()+"\n" + Integer.toString(super.getPaginas()) +"\n" +this.fecha+"\n" + this.primicia;
+        return descripcion;
 	}
 
 }
